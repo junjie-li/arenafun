@@ -1,6 +1,6 @@
-SET @Entry :=400005;
+SET @Entry :=400004;
 SET @ModelID :=29308;
-SET @Name :='PVE 251戒指饰品';
+SET @Name :='PVE 264副件';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
 DELETE FROM `creature_template` WHERE `entry`=@Entry;
@@ -12,6 +12,5 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 -- SET @Entry :=400003;
 -- SET @iLvL :='264';
-DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=251 and flags != '36864' and (InventoryType='11' or InventoryType='12');   -- pve rings/trinkets
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=264 and flags = '36864' and (InventoryType='2' or InventoryType='6' or InventoryType='8' or InventoryType='9' or InventoryType='16');   -- pvp offsets

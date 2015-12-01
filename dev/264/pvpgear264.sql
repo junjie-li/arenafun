@@ -14,6 +14,4 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 -- SET @iLvL :='264';
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 264 and class='4' and flags ='36864'; -- 36864 is pvp gear, 264 is all offsets
-INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 270 and class='4' and flags ='36864';
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 270 and class = '4' and flags = '36864' and itemset != '0'; -- all pvp suits

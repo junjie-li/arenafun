@@ -1,6 +1,6 @@
-SET @Entry :=400005;
+SET @Entry :=300002;
 SET @ModelID :=29308;
-SET @Name :='PVE 戒指饰品';
+SET @Name :='PVP S7武器';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
 DELETE FROM `creature_template` WHERE `entry`=@Entry;
@@ -10,10 +10,8 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 
 
--- SET @Entry :=400003;
+-- SET @Entry :=400001;
 -- SET @iLvL :='264';
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=258 and flags != '36864' and (InventoryType='11' or InventoryType='12');   -- pve rings/trinkets
-INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=264 and flags != '36864' and (InventoryType='11' or InventoryType='12');   -- pve rings/trinkets
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 245 and class='2' and flags = '36864') or (ItemLevel = 245 and class='4' and flags = '36864' and (subclass = '0' or subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- 245 weapons/sheilds/totems
