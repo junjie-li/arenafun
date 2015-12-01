@@ -1,6 +1,6 @@
-SET @Entry :=400004;
+SET @Entry :=400003;
 SET @ModelID :=29308;
-SET @Name :='PVE 264副件';
+SET @Name :='PVP 264副件';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
 DELETE FROM `creature_template` WHERE `entry`=@Entry;

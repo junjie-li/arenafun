@@ -1,4 +1,4 @@
-SET @Entry :=400003;
+SET @Entry :=400002;
 SET @ModelID :=29308;
 SET @Name :='PVP S8武器';
 SET @Subname :='';
@@ -14,4 +14,4 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 -- SET @iLvL :='264';
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 264 and class='2' and flags = '36864') or (ItemLevel = 264 and class='4' and flags = '36864' and (subclass = '0' or subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- S8 weapons/sheilds/totems
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 264 and class='2' and flags = '36864') or (ItemLevel = 270 and class='4' and flags = '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- S8 weapons/sheilds/totems

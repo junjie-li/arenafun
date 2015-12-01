@@ -1,4 +1,4 @@
-SET @Entry :=400005;
+SET @Entry :=400007;
 SET @ModelID :=29308;
 SET @Name :='PVE/PVP 戒指饰品';
 SET @Subname :='';
