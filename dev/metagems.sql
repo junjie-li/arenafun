@@ -1,6 +1,6 @@
-SET @Entry :=400004;
+SET @Entry :=700005;
 SET @ModelID :=29308;
-SET @Name :='PVE 264武器';
+SET @Name :='多彩宝石供应商';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
 DELETE FROM `creature_template` WHERE `entry`=@Entry;
@@ -14,4 +14,4 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 -- SET @iLvL :='264';
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 264 and class='2' and flags != '36864') or (ItemLevel = 264 and class='4' and flags != '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- T11 weapons/sheilds/totems
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE Quality = '3' and class= '3' and itemlevel = '80' and subclass = '6';  -- Meta gems

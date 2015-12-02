@@ -1,6 +1,6 @@
-SET @Entry :=400005;
+SET @Entry :=700004;
 SET @ModelID :=29308;
-SET @Name :='PVE 264副件';
+SET @Name :='宝石供应商';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
 DELETE FROM `creature_template` WHERE `entry`=@Entry;
@@ -10,9 +10,8 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 
 
--- SET @Entry :=400003;
+-- SET @Entry :=400001;
 -- SET @iLvL :='264';
+DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=258 and flags != '36864' and (InventoryType='2' or InventoryType='6' or InventoryType='8' or InventoryType='9' or InventoryType='16');   -- pve offsets
-INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=264 and flags != '36864' and (InventoryType='2' or InventoryType='6' or InventoryType='8' or InventoryType='9' or InventoryType='16');   -- pve offsets
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE Quality = '4' and class= '3' and itemlevel = '80' and subclass != '6';   -- Regular gems

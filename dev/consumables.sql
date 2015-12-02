@@ -1,6 +1,6 @@
-SET @Entry :=400003;
+SET @Entry :=300008;
 SET @ModelID :=29308;
-SET @Name :='PVE 264套装';
+SET @Name :='消耗品供应商';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
 DELETE FROM `creature_template` WHERE `entry`=@Entry;
@@ -14,4 +14,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 -- SET @iLvL :='264';
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 264 and class = '4' and flags != '36864' and itemset != '0'; -- all pvp suits
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '0' and subclass = '6';  -- Consumbles
+
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`) VALUES
+(@Entry, 0, 43233, 0, 0, 0);

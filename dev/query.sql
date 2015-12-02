@@ -1,13 +1,16 @@
--- SELECT * FROM world.creature_template where entry > 100000;
--- SELECT * FROM world.npc_vendor where entry = 34093;
+-- SELECT * FROM world.npc_trainer;
+SELECT * FROM world.creature_template where entry > 100002;
+-- SELECT * FROM world.npc_vendor where entry = 500148;
 -- SELECT * FROM world.gossip_menu_option where menu_id > 24000;
--- SELECT * FROM world.item_template WHERE entry = 51381;
+-- SELECT * FROM world.item_template WHERE entry = 41481;
+
+-- CAREFUL!!!!!
 -- DELETE FROM world.creature_template WHERE entry = 400001;
--- DELETE FROM world.npc_vendor WHERE entry = 400001;
+-- DELETE FROM world.npc_vendor WHERE entry = 500147;
 -- DELETE FROM world.gossip_menu_option playercreateinfoWHERE menu_id = 24001;
+-- CAREFUL!!!!!
 
-
--- SELECT * FROM world.creature_template where name like '%Arena Battlemaster%';
+-- SELECT * FROM world.item_template where name like '%Deadly Poison%';
 
 
 -- SELECT * FROM world.item_template WHERE ItemLevel = 264 and class='4' and flags ='36864';  -- pvp suits
@@ -18,7 +21,7 @@
 -- SELECT playerClass, playerSpec, pos, itemEntry, enchant, socket1, socket2, socket3, bonusEnchant, prismaticEnchant FROM characters.template_npc_human;
 
 -- PVE
-SELECT * FROM world.item_template WHERE (ItemLevel = 264 and class='2' and flags != '36864') or (ItemLevel = 264 and class='4' and flags != '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- T11 weapons/sheilds/totems
+-- SELECT * FROM world.item_template WHERE (ItemLevel = 264 and class='2' and flags != '36864') or (ItemLevel = 264 and class='4' and flags != '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- T11 weapons/sheilds/totems
 -- SELECT * FROM world.item_template WHERE ItemLevel = 264 and class = '4' and flags != '36864' and itemset != '0'; -- all pve suits
 -- SELECT * FROM world.item_template WHERE ItemLevel=264 and flags != '36864' and (InventoryType='11' or InventoryType='12');   -- pve rings/trinkets
 -- SELECT * FROM world.item_template WHERE ItemLevel=264 and flags != '36864' and (InventoryType='2' or InventoryType='6' or InventoryType='8' or InventoryType='9' or InventoryType='16');   -- pve offsets
@@ -30,4 +33,8 @@ SELECT * FROM world.item_template WHERE (ItemLevel = 264 and class='2' and flags
 -- SELECT * FROM world.item_template WHERE ItemLevel=264 and flags = '36864' and (InventoryType='11' or InventoryType='12');   -- pvp rings/trinkets
 -- SELECT * FROM world.item_template WHERE ItemLevel=264 and flags = '36864' and (InventoryType='2' or InventoryType='6' or InventoryType='8' or InventoryType='9' or InventoryType='16');   -- pvp offsets
 
+-- Gem
+-- SELECT * FROM world.item_template WHERE Quality = '4' and class= '3' and itemlevel = '80' and subclass != '6';   -- Regular gems
+-- SELECT * FROM world.item_template WHERE Quality = '3' and class= '3' and itemlevel = '80' and subclass = '6';  -- Meta gems
 
+-- SELECT * FROM world.item_template WHERE class= '16' and subclass = '11';  -- Consumbles
