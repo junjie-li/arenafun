@@ -1,13 +1,17 @@
 -- SELECT * FROM world.npc_trainer;
-SELECT * FROM world.creature_template where entry > 100002;
--- SELECT * FROM world.npc_vendor where entry = 500148;
--- SELECT * FROM world.gossip_menu_option where menu_id > 24000;
+-- SELECT * FROM world.creature_template where entry > 100002;
+
+-- SELECT * FROM world.npc_vendor where entry >= 600002;
+-- SELECT * FROM world.gossip_menu_option where menu_id > 23000;
 -- SELECT * FROM world.item_template WHERE entry = 41481;
 
 -- CAREFUL!!!!!
 -- DELETE FROM world.creature_template WHERE entry = 400001;
 -- DELETE FROM world.npc_vendor WHERE entry = 500147;
 -- DELETE FROM world.gossip_menu_option playercreateinfoWHERE menu_id = 24001;
+-- DELETE FROM world.creature_template WHERE entry >= 500146 AND entry <= 600154;
+-- DELETE FROM world.npc_vendor WHERE entry >= 500146 AND entry <= 500154;
+-- DELETE FROM world.gossip_menu_option WHERE menu_id >= 24000 AND menu_id <= 25000;
 -- CAREFUL!!!!!
 
 -- SELECT * FROM world.item_template where name like '%Deadly Poison%';

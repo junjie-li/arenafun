@@ -7,9 +7,10 @@ DELETE FROM `creature_template` WHERE `entry`=@Entry;
 INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `dmgschool`, `BaseAttackTime`, `RangeAttackTime`, `BaseVariance`, `RangeVariance`, `unit_class`, `unit_flags`, `unit_flags2`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `HoverHeight`, `HealthModifier`, `ManaModifier`, `ArmorModifier`, `DamageModifier`, `ExperienceModifier`, `RacialLeader`,`movementId`, `RegenHealth`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `VerifiedBuild`) VALUES 
 (@Entry, 0, 0, 0, 0, 0, @ModelID, 0, 0, 0, @Name, @Subname, NULL, 0, 80, 80, 0, 35, @NPCFLAG, 1, 1.14286, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 3, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, '', 0);
 
+
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '1'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '1';
 
 --
 
@@ -24,7 +25,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '2'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '2';
 
 --
 
@@ -39,7 +40,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '3'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '3';
 
 --
 
@@ -54,7 +55,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '4'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '4';
 
 --
 
@@ -69,7 +70,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '5'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '5';
 
 --
 
@@ -84,7 +85,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '6'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '6';
 
 --
 
@@ -99,7 +100,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '7'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '7';
 
 --
 
@@ -114,7 +115,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '8'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '8';
 
 --
 
@@ -129,7 +130,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '9'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '9';
 
 --
 
@@ -144,12 +145,12 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '11'；
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE class= '16' and subclass = '11';
 
 --
 
-SET @Entry :=700003;
-SET @Menu_id :=25003;
+SET @Entry :=700006;
+SET @Menu_id :=25006;
 SET @ModelID :=27916;
 SET @Name :='职业铭文供应商';
 SET @Subname :='';
