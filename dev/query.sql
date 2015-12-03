@@ -1,4 +1,7 @@
--- SELECT * FROM world.npc_trainer;
+-- SELECT * FROM world.creature where modelid = '27916';
+-- SELECT * FROM world.playercreateinfo_item;
+-- SELECT * FROM world.creature_template WHERE `VerifiedBuild` != 12340;
+-- SELECT * FROM world.creature WHERE id = ANY (SELECT `entry` FROM world.creature_template WHERE `VerifiedBuild` != 12340);
 -- SELECT * FROM world.creature_template where entry > 100002;
 
 -- SELECT * FROM world.npc_vendor where entry >= 600002;
