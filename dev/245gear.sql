@@ -1,5 +1,5 @@
 SET @Entry :=300001;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVP S7装备';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -18,7 +18,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=245 and flag
 --
 
 SET @Entry :=300002;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVP S7武器';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -29,13 +29,13 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 245 and class='2' and flags = '36864') or (ItemLevel = 245 and class='4' and flags = '36864' and subclass = '0') or (ItemLevel >= 251 and class='4' and flags = '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- S7 weapons/sheilds/totems
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 245 and class='2' and flags = '36864') or (ItemLevel = 251 and class='4' and flags = '36864' and (subclass = '0' or subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- S7 weapons/sheilds/totems
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES (@Entry, '0', '42483', '0', '0', '0', '0');
 
 --
 
 SET @Entry :=300003;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE 251套装';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -51,7 +51,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 251 and cl
 --
 
 SET @Entry :=300004;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE 251副件';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -67,7 +67,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=251 and flag
 --
 
 SET @Entry :=300005;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE 251戒指饰品';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -84,7 +84,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=251 and (Inv
 
 SET @Entry :=700001;
 SET @Menu_id :=25001;
-SET @ModelID :=27916;
+SET @ModelID :=18290;
 SET @Name :='初级武器装备供应商';
 SET @Subname :='';
 SET @NPCFLAG :=129; -- 129 is gossip / scripted npc's, 4225 is vendor

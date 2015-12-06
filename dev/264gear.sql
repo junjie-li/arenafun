@@ -1,5 +1,5 @@
 SET @Entry :=400001;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVP S8装备';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -15,7 +15,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 270 and cl
 --
 
 SET @Entry :=400002;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVP S8武器';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -31,7 +31,7 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 --
 
 SET @Entry :=400003;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVP 264副件';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -48,7 +48,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=264 and flag
 --
 
 SET @Entry :=400004;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE 264套装';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -65,7 +65,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel = 264 and cl
 --
 
 SET @Entry :=400005;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE 264武器';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -76,12 +76,12 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 264 and class='2' and flags != '36864') or (ItemLevel = 264 and class='4' and flags != '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- T11 weapons/sheilds/totems
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE (ItemLevel = 264 and class='2' and flags != '36864') or (ItemLevel = 270 and class='4' and flags = '36864' and (subclass = '0' or subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- T11 weapons/sheilds/totems
 
 --
 
 SET @Entry :=400006;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE 264副件';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -100,7 +100,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=264 and flag
 --
 
 SET @Entry :=400007;
-SET @ModelID :=29308;
+SET @ModelID :=18290;
 SET @Name :='PVE/PVP 戒指饰品';
 SET @Subname :='';
 SET @NPCFLAG :=4225; -- 129 is gossip / scripted npc's, 4225 is vendor
@@ -119,7 +119,7 @@ SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ItemLevel=264 and (Inv
 
 SET @Entry :=700002;
 SET @Menu_id :=25002;
-SET @ModelID :=27916;
+SET @ModelID :=18290;
 SET @Name :='进阶武器装备供应商';
 SET @Subname :='';
 SET @NPCFLAG :=129; -- 129 is gossip / scripted npc's, 4225 is vendor

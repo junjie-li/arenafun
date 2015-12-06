@@ -8,7 +8,7 @@
 -- SELECT * FROM world.creature_template where entry = 29533 or entry = 95027;
 -- SELECT * FROM world.npc_vendor where entry = 300002;
 -- SELECT * FROM world.gossip_menu_option where menu_id > 23000;
--- SELECT * FROM world.item_template WHERE entry = 42526;
+ SELECT * FROM world.item_template WHERE entry = 51531;
 -- SELECT * FROM world.gameobject_template WHERE entry > 800000;
 
 -- CAREFUL!!!!!
@@ -20,7 +20,7 @@
 -- DELETE FROM world.gossip_menu_option WHERE menu_id >= 24000 AND menu_id <= 25000;
 -- CAREFUL!!!!!
 
- SELECT * FROM world.item_template where name like '%Wrathful Gladiator%';
+-- SELECT * FROM world.item_template where name like '%Wrathful Gladiator%';
 -- SELECT * FROM world.creature_template where subname like '%arena battlemaster%';
 -- SELECT * FROM world.gameobject_template where name like '%Pedestal%';
 
