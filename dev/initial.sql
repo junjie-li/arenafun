@@ -4,10 +4,16 @@ UPDATE `world`.`item_template` SET `RequiredReputationFaction`='0', `RequiredRep
 -- Delete 80 email
 DELETE FROM `achievement_reward` WHERE `entry` = "13";
 
--- Bags
+-- Star items
 UPDATE `world`.`item_template` SET `name`='爱马仕包包', `description`='斗士必备' WHERE `entry`='23162';
 INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
 (0, 0, 23162, 4);
+INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
+(0, 0, 44226, 1);
+INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
+(0, 0, 34722, 100);
+INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
+(0, 0, 21215, 100);
 
 -- Delete All Quests
 DELETE FROM `quest_template`; 
@@ -27,5 +33,5 @@ UPDATE `world`.`creature_template` SET `modelid1`='18290' WHERE `entry`>'190000'
 
 
 -- Start Area
-UPDATE world.playercreateinfo SET `map`='0', `zone`='1519', `position_x`='-8834.21', `position_y`='622.652', `position_z`='93.5914', `orientation`='0.763399' WHERE `race` IN (1,3,4,7,11,22);
-UPDATE world.playercreateinfo SET `map`='1', `zone`='1637', `position_x`='1569.7', `position_y`='-4449.52', `position_z`='5.37452', `orientation`='0.023289' WHERE `race` IN (2,5,6,8,9,10);
+UPDATE world.playercreateinfo SET `map`='0', `zone`='1519', `position_x`='-8847.03', `position_y`='607.66', `position_z`='93', `orientation`='0.777' WHERE `race` IN (1,3,4,7,11,22);
+UPDATE world.playercreateinfo SET `map`='1', `zone`='1637', `position_x`='1583.385', `position_y`='-4459.59', `position_z`='9', `orientation`='2.293' WHERE `race` IN (2,5,6,8,9,10);

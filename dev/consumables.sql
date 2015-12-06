@@ -82,3 +82,32 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 (@Entry, 0, 52021, 0, 0, 0);
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`) VALUES
 (@Entry, 0, 52020, 0, 0, 0);
+
+
+-- SELECT * FROM world.item_template WHERE entry = ANY (SELECT `item` FROM world.npc_vendor WHERE entry = 300008);
+UPDATE `world`.`item_template` SET `BuyCount`='200', `RequiredSkill`='0', `RequiredSkillRank`='0', `stackable`='1000' WHERE `entry`='34722';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='21177';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='17020';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='44615';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='44614';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='44605';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='43523';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='43236';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='43237';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='43235';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='43233';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='43231';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='37201';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='40359';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='35948';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='21215';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='17058';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='5237';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='17056';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='3775';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='17030';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='17033';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='16583';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='5565';
+UPDATE `world`.`item_template` SET `BuyCount`='200' WHERE `entry`='52020';
+UPDATE `world`.`item_template` SET `BuyCount`='200' WHERE `entry`='52021';

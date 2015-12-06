@@ -1,27 +1,3 @@
--- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               5.6.26-log - MySQL Community Server (GPL)
--- Server OS:                    Win64
--- HeidiSQL Version:             9.2.0.4981
--- --------------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-
-CREATE TABLE IF NOT EXISTS `template_npc_alliance` (
-  `playerClass` varchar(50) NOT NULL,
-  `playerSpec` varchar(50) NOT NULL,
-  `pos` int(10) unsigned NOT NULL DEFAULT '0',
-  `itemEntry` int(10) unsigned NOT NULL DEFAULT '0',
-  `enchant` int(10) unsigned NOT NULL DEFAULT '0',
-  `socket1` int(10) unsigned NOT NULL DEFAULT '0',
-  `socket2` int(10) unsigned NOT NULL DEFAULT '0',
-  `socket3` int(10) unsigned NOT NULL DEFAULT '0',
-  `bonusEnchant` int(10) unsigned NOT NULL DEFAULT '0',
-  `prismaticEnchant` int(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Templates';
 
 /*!40000 ALTER TABLE `template_npc_alliance` DISABLE KEYS */;
 INSERT INTO `template_npc_alliance` (`playerClass`, `playerSpec`, `pos`, `itemEntry`, `enchant`, `socket1`, `socket2`, `socket3`, `bonusEnchant`, `prismaticEnchant`) VALUES

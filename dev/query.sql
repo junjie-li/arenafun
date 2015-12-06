@@ -1,4 +1,4 @@
--- SELECT * FROM world.creature where guid >= '217420';
+-- SELECT * FROM world.creature where id = '14338';
 -- SELECT * FROM world.creature where map = '1';
 -- SELECT * FROM world.playercreateinfo_item;
 -- SELECT * FROM template_npc_alliance;
@@ -6,14 +6,15 @@
 -- SELECT * FROM world.creature WHERE id = ANY (SELECT `entry` FROM world.creature_template WHERE `VerifiedBuild` != 12340);
 -- SELECT * FROM world.creature_template where entry > 90000;
 -- SELECT * FROM world.creature_template where entry = 29533 or entry = 95027;
--- SELECT * FROM world.npc_vendor where entry = 300002;
+-- SELECT * FROM world.npc_vendor where entry = 28225;
 -- SELECT * FROM world.gossip_menu_option where menu_id > 23000;
- SELECT * FROM world.item_template WHERE entry = 51531;
+-- SELECT * FROM world.item_template WHERE stackable = 20;
+-- SELECT * FROM world.item_template WHERE entry = ANY (SELECT `item` FROM world.npc_vendor WHERE entry = 34060);
 -- SELECT * FROM world.gameobject_template WHERE entry > 800000;
 
 -- CAREFUL!!!!!
 -- DELETE FROM world.creature_template WHERE entry = 400001;
--- DELETE FROM world.npc_vendor WHERE entry = 500147;
+-- DELETE FROM world.npc_vendor WHERE entry = 34060;
 -- DELETE FROM world.gossip_menu_option playercreateinfoWHERE menu_id = 24001;
 -- DELETE FROM world.creature_template WHERE entry >= 500146 AND entry <= 600154;
 -- DELETE FROM world.npc_vendor WHERE entry >= 500146 AND entry <= 500154;
@@ -21,7 +22,7 @@
 -- CAREFUL!!!!!
 
 -- SELECT * FROM world.item_template where name like '%Wrathful Gladiator%';
--- SELECT * FROM world.creature_template where subname like '%arena battlemaster%';
+-- SELECT * FROM world.creature_template where subname like '%arena%';
 -- SELECT * FROM world.gameobject_template where name like '%Pedestal%';
 
 -- SELECT * FROM world.item_template WHERE ItemLevel = 264 and class='4' and flags ='36864';  -- pvp suits
@@ -39,7 +40,7 @@
 
 
 -- PVP
--- SELECT * FROM world.item_template WHERE (ItemLevel = 245 and class='2' and flags = '36864') or (ItemLevel = 245 and class='4' and flags = '36864' and subclass = '0') or (ItemLevel = 251 and class='4' and flags = '36864' and (subclass = '6' or subclass = '7' or subclass = '8' or subclass = '9' or subclass = '10'));  -- S8 weapons/sheilds/totems
+-- SELECT * FROM world.item_template WHERE ((ItemLevel = 264 or ItemLevel = 270) and class='2' and (flags = '36864' or flags = '4231168')) or ((ItemLevel = 264 or ItemLevel = 270) and class='4' and flags = '36864' and (InventoryType = '14' or InventoryType = '20' or InventoryType = '23' or InventoryType = '28'));  -- S8 weapons/sheilds/totems
 -- SELECT * FROM world.item_template WHERE ItemLevel = 270 and class = '4' and flags = '36864' and itemset != '0'; -- all pvp suits
 -- SELECT * FROM world.item_template WHERE ItemLevel=264 and flags = '36864' and (InventoryType='11' or InventoryType='12');   -- pvp rings/trinkets
 -- SELECT * FROM world.item_template WHERE ItemLevel=264 and flags = '36864' and (InventoryType='2' or InventoryType='6' or InventoryType='8' or InventoryType='9' or InventoryType='16');   -- pvp offsets
