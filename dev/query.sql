@@ -8,7 +8,7 @@
 -- SELECT * FROM world.creature_template where entry = 29533 or entry = 95027;
 -- SELECT * FROM world.npc_vendor where entry = 28225;
 -- SELECT * FROM world.gossip_menu_option where menu_id > 23000;
--- SELECT * FROM world.item_template WHERE stackable = 20;
+-- SELECT * FROM world.item_template WHERE entry = 6265;
 -- SELECT * FROM world.item_template WHERE entry = ANY (SELECT `item` FROM world.npc_vendor WHERE entry = 34060);
 -- SELECT * FROM world.gameobject_template WHERE entry > 800000;
 
