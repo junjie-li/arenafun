@@ -1,12 +1,14 @@
--- SELECT * FROM world.creature where modelid = '27916';
+-- SELECT * FROM world.creature where guid >= '217420';
+-- SELECT * FROM world.creature where map = '1';
 -- SELECT * FROM world.playercreateinfo_item;
 -- SELECT * FROM world.creature_template WHERE `VerifiedBuild` != 12340;
 -- SELECT * FROM world.creature WHERE id = ANY (SELECT `entry` FROM world.creature_template WHERE `VerifiedBuild` != 12340);
--- SELECT * FROM world.creature_template where entry > 100002;
-
--- SELECT * FROM world.npc_vendor where entry >= 600002;
+ SELECT * FROM world.creature_template where entry > 90000;
+-- SELECT * FROM world.creature_template where entry = 29533 or entry = 95027;
+-- SELECT * FROM world.npc_vendor where entry = 95029;
 -- SELECT * FROM world.gossip_menu_option where menu_id > 23000;
--- SELECT * FROM world.item_template WHERE entry = 41481;
+-- SELECT * FROM world.item_template WHERE entry = 41946;
+-- SELECT * FROM world.gameobject_template WHERE entry > 800000;
 
 -- CAREFUL!!!!!
 -- DELETE FROM world.creature_template WHERE entry = 400001;
@@ -18,7 +20,8 @@
 -- CAREFUL!!!!!
 
 -- SELECT * FROM world.item_template where name like '%Deadly Poison%';
-
+-- SELECT * FROM world.creature_template where subname like '%arena battlemaster%';
+-- SELECT * FROM world.gameobject_template where name like '%Pedestal%';
 
 -- SELECT * FROM world.item_template WHERE ItemLevel = 264 and class='4' and flags ='36864';  -- pvp suits
 -- SELECT * FROM world.item_template WHERE ItemLevel = 245 and class='2' and flags = '36864';
@@ -44,4 +47,4 @@
 -- SELECT * FROM world.item_template WHERE Quality = '4' and class= '3' and itemlevel = '80' and subclass != '6';   -- Regular gems
 -- SELECT * FROM world.item_template WHERE Quality = '3' and class= '3' and itemlevel = '80' and subclass = '6';  -- Meta gems
 
--- SELECT * FROM world.item_template WHERE class= '16' and subclass = '11';  -- Consumbles
+-- SELECT * FROM world.item_template WHERE class= '15' and subclass = '1';  -- Consumbles
