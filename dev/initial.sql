@@ -9,11 +9,20 @@ UPDATE `world`.`item_template` SET `name`='爱马仕包包', `description`='斗�
 INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
 (0, 0, 23162, 4);
 INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
-(0, 0, 44226, 1);
-INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
 (0, 0, 34722, 100);
 INSERT INTO `playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES 
 (0, 0, 21215, 100);
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('2', '0', '44226', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('5', '0', '44226', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('6', '0', '44226', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('8', '0', '44226', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('10', '0', '44226', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('1', '0', '44225', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('3', '0', '44225', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('4', '0', '44225', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('7', '0', '44225', '1');
+INSERT INTO `world`.`playercreateinfo_item` (`race`, `class`, `itemid`, `amount`) VALUES ('11', '0', '44225', '1');
+
 
 -- Delete All Quests
 DELETE FROM `quest_template`; 

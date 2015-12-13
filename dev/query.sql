@@ -1,5 +1,5 @@
 -- SELECT * FROM world.creature where id = '14338';
--- SELECT * FROM world.creature where map = '1';
+-- SELECT * FROM world.creature where map = '489';
 -- SELECT * FROM world.playercreateinfo_item;
 -- SELECT * FROM template_npc_alliance;
 -- SELECT * FROM world.creature_template WHERE `VerifiedBuild` != 12340;
@@ -9,7 +9,7 @@
 -- SELECT * FROM world.npc_vendor where entry = 28225;
 -- SELECT * FROM world.gossip_menu_option where menu_id > 23000;
 -- SELECT * FROM world.item_template WHERE entry = 6265;
--- SELECT * FROM world.item_template WHERE entry = ANY (SELECT `item` FROM world.npc_vendor WHERE entry = 34060);
+-- SELECT * FROM world.item_template WHERE entry = ANY (SELECT `item` FROM world.npc_vendor WHERE entry = 300008);
 -- SELECT * FROM world.gameobject_template WHERE entry > 800000;
 
 -- CAREFUL!!!!!
@@ -22,7 +22,7 @@
 -- CAREFUL!!!!!
 
 -- SELECT * FROM world.item_template where name like '%Wrathful Gladiator%';
--- SELECT * FROM world.creature_template where subname like '%arena%';
+-- SELECT * FROM world.creature_template where name like '%Aillance Healer%';
 -- SELECT * FROM world.gameobject_template where name like '%Pedestal%';
 
 -- SELECT * FROM world.item_template WHERE ItemLevel = 264 and class='4' and flags ='36864';  -- pvp suits

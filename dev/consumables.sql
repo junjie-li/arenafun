@@ -110,5 +110,8 @@ UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `e
 UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='16583';
 UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='5565';
 UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='6265';
-UPDATE `world`.`item_template` SET `BuyCount`='200' WHERE `entry`='52020';
-UPDATE `world`.`item_template` SET `BuyCount`='200' WHERE `entry`='52021';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='52020';
+UPDATE `world`.`item_template` SET `BuyCount`='200', `stackable`='1000' WHERE `entry`='52021';
+UPDATE `world`.`item_template` SET `maxcount`='0' WHERE `entry`='6265';
+UPDATE `world`.`item_template` SET `maxcount`='0' WHERE `entry`='43523';
+
