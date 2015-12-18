@@ -1,0 +1,1 @@
+insert  into `command`(`name`,`permission`,`help`) values ('chat',1009,'Syntax:Use .chat to speak in worldchat!');

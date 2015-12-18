@@ -153,3 +153,15 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `Exte
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES (@Entry, '0', '49098', '0', '0', '0', '0');
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES (@Entry, '0', '50818', '0', '0', '0', '0');
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `VerifiedBuild`) VALUES (@Entry, '0', '52200', '0', '0', '0', '0');
+
+
+
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='50818' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='44234' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='41508' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`='95029' and`item`='33184' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='37828' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='32768' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='33809' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='30480' and`ExtendedCost`='0';
+UPDATE `world`.`npc_vendor` SET `ExtendedCost`='2359' WHERE `entry`='95029' and`item`='21176' and`ExtendedCost`='0';

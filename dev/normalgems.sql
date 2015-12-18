@@ -15,3 +15,33 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
 SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE Quality = '4' and class= '3' and itemlevel = '80' and subclass != '6';   -- Regular gems
+
+
+
+
+
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36766' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36767' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42158' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42157' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42156' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42155' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42154' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42153' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42152' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42151' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42150' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42149' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42148' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42146' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42145' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42144' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42143' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='42142' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='44066' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36919' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36922' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36925' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36928' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36931' and`ExtendedCost`='0';
+DELETE FROM `world`.`npc_vendor` WHERE `entry`=@Entry and`item`='36934' and`ExtendedCost`='0';

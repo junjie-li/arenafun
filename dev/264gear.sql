@@ -76,7 +76,7 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 
 DELETE FROM `npc_vendor` WHERE `entry`=@Entry;
 INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`)
-SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ((ItemLevel = 264 or ItemLevel = 270) and class='2' and (flags != '36864' or flags != '4231168')) or ((ItemLevel = 264 or ItemLevel = 270) and class='4' and flags != '36864' and (InventoryType = '14' or InventoryType = '23' or InventoryType = '28'));  -- S8 weapons/sheilds/totems
+SELECT @Entry, 0, entry, 0, 0, 0 FROM item_template WHERE ((ItemLevel = 264 or ItemLevel = 270) and class='2' and flags != '36864' and flags != '4231168') or ((ItemLevel = 264 or ItemLevel = 270) and class='4' and flags != '36864' and (InventoryType = '14' or InventoryType = '23' or InventoryType = '28'));  -- S8 weapons/sheilds/totems
 
 --
 
