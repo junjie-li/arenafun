@@ -9,6 +9,12 @@ $(document).ready(function() {
         speed: 800
     });
 
+    $('#confirm_password').on('keyup', function () {
+        if ($(this).val() == $('#password').val()) {
+            $('#message').html('密码正确').css('color', 'green');
+        } else $('#message').html('密码不匹配').css('color', 'red');
+    });
+
     // Add scrolled class to nav
 
     $(window).scroll(function() {

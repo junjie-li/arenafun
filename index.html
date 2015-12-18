@@ -46,9 +46,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="text-center col-sm-12">
-							<p><img src="img/logo.png"></p>
+							<!-- <p><img src="img/logo.png"></p> -->
 							<h1>D4WOW</h1>
-							<h6>免费开放s7和T10的装备, 只为PVP..</h6>
+							<h6>战场竞技场PVP服，开放测试中..</h6>
 						</div>
 					</div>
 				</div>
@@ -69,18 +69,26 @@
 							<div class="form-wrapper">
 								<form class="form-email">
 									<div class="form-section">
-										<input type="text" name="name" class="validate-required" placeholder="账号名">
+										<input type="text" name="nm" class="validate-required" placeholder="account">
 									</div>
 									<div class="form-section">
-										<input type="text" name="password" class="validate-required" placeholder="密码">
+										<input type="password" name="pwd" class="validate-required" placeholder="password" id="password">
 									</div>
 									<div class="form-section">
-										<input type="text" name="email" class="validate-required" placeholder="Email地址">
+										<input type="password" name="pwd_confirm" class="validate-required" placeholder="confirm password" id="confirm_password">
+										<h6 id='message'></h6>
 									</div>
 									<div class="form-section">
-										<input type="text" name="code" class="validate-required" placeholder="验证码">
+										<input type="text" name="email" class="validate-required" placeholder="email">
 									</div>
-									<input type="submit" value="注册">
+									<div class="form-section">
+										<input type="text" name="code" class="validate-required" placeholder="code">
+									</div>
+									<div class="form-group">
+									<h6>单击图片重新获取验证码</h6>
+									<img src="code.php" onclick="javascript:this.src='code.php?tm='+Math.random();" />  
+									</div>
+									<input type="submit" name="Submit" value="注册">
 									<div class="form-error">
 										<span>请填写全部选项！</span>
 									</div>
@@ -106,9 +114,12 @@
 						<div class="col-sm-12 text-center">
 							<h1>如何连接？</h1>
 							<p>
-								set realmlist "logon.d4wow.com"
+								需要3.3.5 12340版本的wow客户端
 							</p>
-							<a href="#" class="btn btn-white">下载3.35a客户端</a>
+							<p>
+								用文本编辑器打开Data/zhCN/realmlist.wtf文件：set realmlist "182.254.136.215"
+							</p>
+							<a href="http://down.52pk.com/xiazai/9711.shtml" class="btn btn-white">下载3.35a客户端</a>
 						</div>
 					</div>
 				</div>
@@ -135,7 +146,9 @@
         <script src="js/spectragram.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/bootstrap.min.js"></script>
+		<script src='//kefu.easemob.com/webim/easemob.js?tenantId=9526&hide=false' async='async'></script>
     </body>
+	
 </html>
 
 				
